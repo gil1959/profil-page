@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <main id="main-page">
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#home" class="nav__logo">Caroline</a>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#prestasi" class="nav__link">Prestasi</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <h1 class="home__title" data-aos="fade-right" data-aos-duration="2000"><span>HE</span><br>LLO.</h1>
+
+                    <div class="home__scroll" data-aos="fade-down" data-aos-duration="2000">
+                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt'></i>Scroll down</a>
+                    </div>
+                    <img rel="preload" src="assets/profile.png" alt="Caroline" class="home__img" data-aos="fade-left"
+                        data-aos-duration="2000">
+                </div>
+            </section>
+
+
+            <div id="home2">
+                <div class="content">
+                    <div>
+                        <h1 id="hhome2">Hello, I'm</h1>
+                        <h1 id="hhome1">Caroline</h1>
+                        <h2 id="hhome2">Welcome To My Personal Website</h2>
+                    </div>
+                    <img src="assets/profilhome2.jpeg" alt="Profil">
+                </div>
+            </div>
+            <section id="about">
+                <h1>About Me</h1>
+                <article>
+                    <p id="pabout">
+                        Halo! Perkenalkan, nama saya Caroline Ciselia Br Surbakti. Saya saat ini adalah mahasiswa
+                        semester 1
+                        di Universitas Bengkulu dengan fokus pada program studi akuntansi. Saya memulai perjalanan
+                        akademik
+                        saya dengan semangat yang besar dan penuh harapan untuk dapat mengeksplorasi lebih dalam dunia
+                        akuntansi. Sebagai mahasiswa baru, saya sangat antusias menghadapi tantangan-tantangan baru dan
+                        kesempatan untuk belajar yang ada di depan.
+                    </p>
+                    <p>
+                        saya tertarik pada perhitungan, yang akhirnya membawa saya memilih program studi ini. Keinginan
+                        saya untuk memahami lebih jauh tentang akuntansi semakin berkembang seiring dengan semakin
+                        banyaknya kesempatan yang saya temui untuk belajar dan berinteraksi dengan berbagai orang yang
+                        memiliki wawasan yang sama. Dengan semangat tersebut, saya berharap bisa mengembangkan
+                        pengetahuan
+                        saya dan berkontribusi dalam bidang ini suatu hari nanti.
+                    </p>
+                    <p>
+                        Sebagai mahasiswa semester 1, saya menyadari bahwa ini adalah waktu yang sangat penting untuk
+                        membentuk dasar yang kuat dalam pendidikan saya. Saya berkomitmen untuk tidak hanya belajar di
+                        dalam
+                        kelas, tetapi juga untuk terlibat aktif dalam berbagai kegiatan kampus. Saya percaya bahwa
+                        pengalaman di luar kuliah tidak kalah penting dalam membentuk karakter dan keterampilan
+                        profesional
+                        saya.
+                    </p>
+                </article>
+                <div id="hobi">
+                    <h1>Hobi</h1>
+                    <img src="assets/hobi.png" alt="hobi" id="imghobi">
+                </div>
+
+            </section>
+
+            <div id="prestasi">
+                <h1>Prestasi</h1>
+                <div id="imgcontainer">
+                    <img src="assets/prestasi1 (1).jpeg">
+                    <img src="assets/prestasi2.jpeg">
+                    <img src="assets/prestasi3.jpeg">
+                </div>
+            </div>
+
+            <section id="contact">
+                <h1>Contact</h1>
+                <form>
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="pesan">Pesan:</label>
+                    <input type="text" id="pesan" name="pesan">
+
+                    <button type="submit" class="btn" id="btn-send-email">Kirim</button>
+                </form>
+                <h1>Or</h1>
+                <div id="imgcontact">
+                    <a href="mailto:carolineciselia@gmail.com"><img src="assets/email.png" id=""></a>
+                    <a href="https://www.instagram.com/carolinecslia_?igsh=MXhqb3Fpemw4cDMxYg=="><img
+                            src="assets/ig-removebg-preview.png"></a>
+                    <a href="https://wa.me/083124461660"><img src="assets/wa-removebg-preview.png"></a>
+                </div>
+                </div>
+            </section>
+        </main>
+        <script src="main.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script>
+            AOS.init();
+            $(document).on('click', '#btn-send-email', function () {
+                sendEmail()
+            })
+
+            function sendEmail() {
+                Email.send({
+                    SecureToken: "bb2f6d06-3ce6-4565-a3e3-8fab7325de45",
+                    To: 'ragilkurniawan174@gmail.com',
+                    From: '#btn-send-email',
+                    Subject: "🚀Email from " + $('#email').val(),
+                    Body: 'Nama: ' + $('#name').val() + ' | ' + 'Pesan: ' + $('#body-email').val(),
+                }).then(
+                    message => alert(
+                        message == 'OK' ? 'Email sent successfully' : 'Email sent failed, please try again later'
+                    )
+                );
+            }
+        </script>
+</body>
+
+</html>
